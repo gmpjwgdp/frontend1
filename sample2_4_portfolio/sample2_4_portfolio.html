@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="sample2_4_portfolio.min.css">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script src="sample2_4_portfolio.js"></script>
+  <style type="text/css">
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script type="text/javascript">
+$(function(){
+    var setImg = '#photo';
+    var fadeSpeed = 1600;
+    var switchDelay = 5000;
+
+    $(setImg).children('img').css({opacity:'0'});
+    $(setImg + ' img:first').stop().animate({opacity:'1',zIndex:'20'},fadeSpeed);
+
+    setInterval(function(){
+        $(setImg + ' :first-child').animate({opacity:'0'},fadeSpeed).next('img').animate({opacity:'1'},fadeSpeed).end().appendTo(setImg);
+    },switchDelay);
+});
+</script>
+</head>
+<body>
+  <header>
+    <h5>OMOCHA</h5>
+    <ul>
+      <li class="list1"><a href="">ぽぽちゃん</a></li>
+      <li class="list2"><a href="">のりもの</a></li>
+      <li class="list3"><a href="">家具・育児</a></li>
+      <li class="list4"><a href="">おもちゃ</a></li>
+      <li class="list5"><a href="">お問い合わせ</a></li>
+    </ul>
+  </header>
+  <div class="photo">
+    <div id="photo">
+      <img src="131953c2a0f1921addd59dcd0fe1f816_s.jpg" alt="">
+      <img src="7c669477959253da76e811270b1a8a04_s.jpg" alt="">
+      <img src="c0d82ac934b1b0f35ac49c4881c7ad1e_s.jpg" alt="">
+      <img src="17d541d52fa06bba0fc6974c2360d735_s.jpg" alt="">
+    </div>
+  </div>
+  <div class="news">
+    <p class="ribbon1">NEWS</p>
+    <div class="newses">
+      <div class="left">
+        <div class="oshirase">
+          <p>お知らせ</p>
+        </div>
+        <div class="date">
+          <p>20xx/x/x</p>
+        </div>
+        <div class="naiyou">
+          <p>sample<br>sample<br>samplesample<br>sample<br>sample</p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="oshirase">
+          <p>お知らせ</p>
+        </div>
+        <div class="date">
+          <p>20xx/x/x</p>
+        </div>
+        <div class="naiyou">
+          <p>sample<br>sample<br>samplesample<br>sample<br>sample</p>
+        </div>
+      </div>
+      <div class="right">
+        <div class="oshirase">
+          <p>お知らせ</p>
+        </div>
+        <div class="date">
+          <p>20xx/x/x</p>
+        </div>
+        <div class="naiyou">
+          <p>sample<br>sample<br>samplesample<br>sample<br>sample</p>
+        </div>
+      </div>
+    </div>
+    <div class="Button Radius5" id="IconList3">
+      <a href="#">NEWS一覧</a>
+    </div>
+  </div>
+  <div class="info">
+    <div class="product_info">
+      <p class="ribbon1">商品情報</p>
+      <div class="circles">
+        <div class="popochan circle linkbox">
+          <img class="info_img" src="f0b5658acf7816097318c0f30b37c957_s.jpg" alt="">
+          <p>ぽぽちゃん</p>
+          <a href=""></a>
+          <div class="arrow1"></div>
+        </div>
+        <div class="norimono circle linkbox">
+          <img class="info_img" src="9a71bef9a41d52a08edd66635f24b1e5_s.jpg" alt="">
+          <p>のりもの</p>
+          <a href=""></a>
+          <div class="arrow1"></div>
+        </div>
+        <div class="kagu_ikuzi circle linkbox">
+          <img class="info_img" src="d93465b355a5e1e77f7923f027b71f99_s.jpg" alt="">
+          <p>家具・育児</p>
+          <a href=""></a>
+          <div class="arrow1"></div>
+        </div>
+        <div class="omotya circle linkbox">
+          <img class="info_img" src="bedebb36a0bb91d4851a6b30f5506156_s.jpg" alt="">
+          <p>おもちゃ</p>
+          <a href=""></a>
+          <div class="arrow1"></div>
+        </div>
+      </div>
+    </div>
+    <div class="info_links">
+      <button><a href="">年齢別商品情報</a><div class="arrow"></div></button>
+      <button><a href="">グローバル</a><div class="arrow"></div></button>
+      <button><a href="">会社情報</a><div class="arrow"></div></button>
+      <button><a href="">IR情報</a><div class="arrow"></div></button>
+      <button><a href="">採用情報</a><div class="arrow"></div></button>
+      <button><a href="">お問い合わせ</a><div class="arrow"></div></button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_links">
+      <a href="">▶︎個人情報保護方針</a>
+      <a href="">▶︎ウェブサイト利用規約</a>
+      <a href="">▶︎サイトマップ</a>
+    </div>
+    <p>Copyright omocha Co.,Ltd</p>
+  </footer>
+</body>
+</html>

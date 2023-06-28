@@ -1,0 +1,348 @@
+body{
+  background-color: white;
+  margin :0px;
+  font-family: -apple-system, "blinkMacSystemFont", /* Macの欧文はSan Francisco (OS X 10.11以降) */
+               'Helvetica Neue', /* Macの欧文 (OS X 10.10以前) */
+               'Segoe UI',       /* Windowsの欧文 */
+               "arial unicode ms",        /* Windows8.1以上は游ゴシック */
+               "arial unicode ms",         /* Macの游ゴシック */
+               "Meiryo",           /* 游ゴシックが入っていないWindows */
+               sans-serif;
+  height:1800px;
+  width: 100%;
+}
+header{
+  display: flex;
+  /* background-color: rgba(255,255,255,0.5); */
+  background: white;
+  width: 100%;
+  height:5%;
+  border-bottom: 1px solid rgba(128,128,128,0.5);
+  h5{
+    text-align: center;
+    padding-top: 1%;
+    display: inline-block;
+    font-size: 100%;
+    width:10%;
+    margin-left: 20%;
+    /* height:7%; */
+  }
+  ul{
+    list-style : none;
+    display: flex;
+    width:50%;
+    align-items:center;
+    justify-content:space-around;
+    margin:0;
+    li{
+      text-align: center;
+      height: 88%;
+      width:100%;
+      border-top: 5px solid red;
+    }
+  }
+  a{
+    padding-top:30%;
+    display:block;
+    text-decoration: none;
+    color: rgb(120,120,120);
+    font-size: 15px;
+  }
+}
+.list1{
+  border-top: 10px solid pink;
+}
+.list2{
+  border-top: 10px solid lightblue;
+}
+.list3{
+  border-top: 10px solid orange;
+}
+.list4{
+  border-top: 10px solid green;
+}
+.list5{
+  border-top: 10px solid gray;
+}
+.photo{
+  height: 25%;
+  background-image:url("a0a4be6911f635f68429fea4dea778d0_s.jpg");
+  background-size:cover;
+  position: relative;
+}
+#photo{
+  height: 100%;
+}
+#photo img{
+  position: absolute;
+  border-radius:15px;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.arrow01 {
+  position: absolute;
+  top:49%;
+  left:98%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: solid 3px #697b91;
+  border-right: solid 3px #697b91;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.arrow02 {
+  position: absolute;
+  top:49%;
+  left:1%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  border-top: solid 3px #697b91;
+  border-right: solid 3px #697b91;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(225deg);
+}
+.news{
+  height:30%;
+  text-align: center;
+  button{
+    margin:7%;
+  }
+}
+.newses{
+  margin-top:5%;
+  display: flex;
+  flex-direction:row;
+  justify-content:center;
+}
+/* 角丸 */
+.Radius5 {
+    border-radius: 30px;        /* CSS3草案 */
+    -webkit-border-radius: 30px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 30px;   /* Firefox用 */
+}
+/* ボタン共通 */
+.Button {
+  display: block;
+	overflow: hidden;
+  margin-left: 500px;
+	width: 200px;
+	height: 50px;
+	margin:5% 0 0 70%;
+	padding: 0;
+  border: 1px rgb(120,120,120) solid;
+}
+.Button a {
+	display: block;
+	position: relative;
+	z-index: 100;
+	text-align:center;
+	background: white;
+	color: rgb(120,120,120);
+	font-size: 12px;
+	line-height: 50px;
+	text-decoration:none;
+}
+#IconList3 a:before {        /*白い丸 */
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 19px;
+	width: 16px;
+	height: 16px;
+	margin-top: -8px;
+	border-radius: 50%;        /* CSS3草案 */
+    -webkit-border-radius: 50%;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 50%;   /* Firefox用 */
+	background: #fff;
+}
+#IconList3 a:after {        /*「after要素」で三角 */
+	display: block;
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 25px;
+	width: 0;
+	height: 0;
+	margin-top: -5px;
+	border: 5px solid transparent;        /*top right bottom を透明化 */
+	border-left: 5px solid rgb(120,120,120);
+}
+.oshirase{
+  display: inline-block;
+  font-size: 15px;
+  width:75px;
+  color: white;
+  background: skyblue;
+  border-radius:5px;
+  p{
+    margin:0;
+  }
+}
+.left{
+  width: 25%;
+  border-right:1px dotted black;
+}
+.center{
+  width: 25%;
+  border-right:1px dotted black;
+}
+.right{
+  width: 25%;
+}
+.ribbon1 {
+  display: inline-block;
+  position: relative;
+  height: 50px;/*リボンの高さ*/
+  width: 30%;
+  line-height: 50px;/*リボンの高さ*/
+  text-align: center;
+  padding: 0 30px;/*横の大きさ*/
+  font-size: 18px;/*文字の大きさ*/
+  background: brown;/*塗りつぶし色*/
+  color: #FFF;/*文字色*/
+  box-sizing: border-box;
+}
+
+// .ribbon1:before, .ribbon1:after {
+//   position: absolute;
+//   content: '';
+//   width: 0px;
+//   height: 0px;
+//   z-index: 1;
+// }
+//
+// .ribbon1:before {
+//   top: 0;
+//   left: 0;
+//   border-width: 25px 0px 25px 15px;
+//   border-color: transparent transparent transparent #fff;
+//   border-style: solid;
+// }
+//
+// .ribbon1:after {
+//   top: 0;
+//   right: 0;
+//   border-width: 25px 15px 25px 0px;
+//   border-color: transparent #fff transparent transparent;
+//   border-style: solid;
+// }
+.info{
+  text-align: center;
+  height: 35%;
+  .product_info{
+    padding-top: 2%;
+    height:58%;
+    background-image:url("a0a4be6911f635f68429fea4dea778d0_s.jpg");
+    background-size: cover;
+  }
+}
+.circles{
+  padding: 0 200px 0 200px;
+  display: flex;
+  justify-content:space-between;
+  .info_img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5%;
+  }
+  .circle{
+    height:200px;
+    width: 200px;
+    border-radius: 50%;
+    background: white;
+    p{
+      color: rgb(120,120,120);
+    }
+  }
+}
+.info_links{
+  color: rgb(120,120,120);
+  padding: 0.5% 25% 0 25%;
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  height: 35%;
+  width: 50%;
+  a{
+    color: rgb(120,120,120);
+    text-decoration: none;
+    button{
+      display: flex;
+      justify-content: center;
+      margin-top: 4%;
+      font-size: 20px;
+      width:33%;
+      height:30%;
+      border-radius:45px;
+    }
+  }
+  button{
+    color: rgb(120,120,120);
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+    font-size: 20px;
+    width:33%;
+    height:30%;
+    border-radius:45px;
+  }
+}
+.linkbox {
+    position: relative;
+}
+.linkbox a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height:100%;
+    width: 100%;
+}
+.arrow{
+  position: relative;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid;
+  border-color: rgb(120,120,120) rgb(120,120,120) transparent transparent;
+  transform: rotate(45deg);
+}
+.arrow1{
+  position: relative;
+  left: 45%;
+  bottom: 3%;
+  width: 7.5px;
+  height: 7.5px;
+  border: 5px solid;
+  border-color:  transparent transparent rgb(120,120,120) rgb(120,120,120);
+  transform: rotate(-45deg);
+}
+footer{
+  padding-top: 2%;
+  height: 5%;
+  background: rgb(250,250,250);
+  text-align: center;
+  font-size:10px;
+  .footer_links{
+    a{
+      margin: 0 2% 0 2%;
+      font-size:15px;
+      text-decoration: none;
+      color: rgb(120,120,120);
+    }
+  }
+}
+
+.info_links button:hover {
+  background: rgba(240,240,240,0.9);
+}
+.circles .circle:hover{
+  background: rgba(240,240,240,0.9);
+}
+.news .Button a:hover {
+  background: rgba(240,240,240,0.9);
+}
